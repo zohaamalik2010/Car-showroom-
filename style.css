@@ -1,0 +1,439 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f9fa;
+    color: #222;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+.logo span {
+    color: #f5a623;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar ul li a:hover {
+    color: #f5a623;
+}
+
+.nav-btn, .btn {
+    background: #f5a623;
+    color: #111;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 550px;
+    background:
+    linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0,.2)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.hero-content {
+    color: white;
+    max-width: 550px;
+}
+
+.tag {
+    color: #f5a623;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #f5a623;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Cars */
+
+.cars {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.cars h2, .about h2, .contact h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.car-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 25px;
+    text-align: left;
+}
+
+.card-info h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card-info p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card-info h4 {
+    color: #e69b16;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.card-info a {
+    display: inline-block;
+    background: #111827;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+}
+
+/* About */
+
+.about {
+    background: #111827;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 20px auto 35px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* Contact */
+
+.contact {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contact p {
+    margin: 15px 0;
+    color: #666;
+}
+
+/* Footer */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .car-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+
+.about {
+    padding: 80px 8%;
+    background: #f4f6f8;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h5 {
+    color: #e69b16;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-btn {
+    display: inline-block;
+    background: #f5a623;
+    color: #111;
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.about-btn:hover {
+    background: #111827;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+}
+
+.contact {
+    padding: 80px 8%;
+    background: #f4f6f8;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-heading h5 {
+    color: #e69b16;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.contact-heading h2 {
+    font-size: 38px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.contact-heading p {
+    color: #777;
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.info-box {
+    background: white;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #f5a623;
+}
+
+.info-box h4 {
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.info-box p {
+    color: #777;
+}
+
+/* Contact Form */
+
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f5a623;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background: #f5a623;
+    color: #111;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #111827;
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-heading h2 {
+        font-size: 30px;
+    }
+}
